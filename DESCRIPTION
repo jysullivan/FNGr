@@ -2,8 +2,8 @@ Package: FNGr
 Type: Package
 Title: Fish and Game R styles for figures
 Version: 0.1.0
-Author: Ben Williams
-Maintainer: The package maintainer ben.williams@alaska.gov
+Author: Ben Williams [aut, cre]
+Maintainer: Ben Williams <ben.williams@alaska.gov>
 Description: Functions for producing general styles for consistent figures within Fish and Game 
 License: What license is it under?
 Encoding: UTF-8
