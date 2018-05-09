@@ -1,11 +1,10 @@
 Package: FNGr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Fish and Game R styles for figures
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Ben Williams
+Maintainer: The package maintainer ben.williams@alaska.gov
+Description: Functions for producing general styles for consistent figures within Fish and Game 
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
