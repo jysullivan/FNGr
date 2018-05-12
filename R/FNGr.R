@@ -38,12 +38,12 @@ theme_sleek <- function(base_size = 12, base_family = "Times") {
 tickr <- function(
   data, # dataframe
   var, # column of interest
-  to # break point definition 
+  to # break point definition
   ){
-  
+
   VAR <- enquo(var) # makes VAR a dynamic variable
-  
-  data %>% 
+
+  data %>%
     distinct(!!VAR) %>%
     mutate(labels = ifelse(!!VAR %in% seq(to * round(min(!!VAR) / to), max(!!VAR), to),
                           !!VAR, "")) %>%
