@@ -9,10 +9,13 @@ Description: Functions for producing general styles for consistent figures withi
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Imports:
     dplyr,
     extrafont
 Suggests:
     tidyverse,
     scales,
-    devtools
+    devtools,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
