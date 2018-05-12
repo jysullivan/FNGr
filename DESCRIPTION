@@ -12,3 +12,7 @@ LazyData: true
 Imports: 
     dplyr,
     extrafont
+Suggests:
+    tidyverse,
+    scales,
+    devtools
