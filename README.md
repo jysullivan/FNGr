@@ -1,3 +1,11 @@
+YOu can download this repository using devtools
+
+```{r}
+# install.packages("devtools")
+devtools::install_github("ben-williams/FNGr")
+```
+Then load the package per usual
+
 ``` r
 library(FNGr)
 library(tidyverse)
