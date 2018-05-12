@@ -14,7 +14,7 @@ The basic ggplot figure spaces years about every 5-10, depending on the timeseri
 ggplot(df, aes(year, age, size = y)) + geom_point()  + scale_size_area()
 ```
 
-![](FNGr_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](readme_files/FNGr_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
 This makes for a rather poor axis, for our typical presentation needs. We can clean this up somewhat by using breaks or the pretty\_breaks function from the scales package
 
@@ -23,7 +23,7 @@ ggplot(df, aes(year, age, size = y)) + geom_point() + scale_size_area() +
     scale_x_continuous(breaks = seq(1973, 2016, 3))
 ```
 
-![](FNGr_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](readme_files/FNGr_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 ``` r
 
@@ -31,7 +31,7 @@ ggplot(df, aes(year, age, size = y)) + geom_point() +
   scale_x_continuous(breaks = pretty_breaks(n = 15))
 ```
 
-![](FNGr_files/figure-markdown_github/unnamed-chunk-3-2.png)
+![](readme_files/FNGr_files/figure-markdown_github/unnamed-chunk-3-2.png)
 
 However this does not show a tick for each year, something that has been regularly requested. tickr will add a tick mark to each year and provide a label for the interval designated.
 
@@ -46,4 +46,4 @@ ggplot(df, aes(year, age, size = y)) + geom_point() +
   scale_y_continuous(breaks = yaxis$breaks, labels = yaxis$labels)
 ```
 
-![](FNGr_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](readme_files/FNGr_files/figure-markdown_github/unnamed-chunk-4-1.png)
