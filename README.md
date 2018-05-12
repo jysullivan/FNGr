@@ -1,4 +1,4 @@
-YOu can download this repository using devtools
+You can download this repository using devtools
 
 ```{r}
 # install.packages("devtools")
