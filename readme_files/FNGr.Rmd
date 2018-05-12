@@ -2,11 +2,9 @@
 title: "FNGr"
 author: "Ben Williams"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{FNGr}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+output:  
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include = FALSE}
@@ -29,13 +27,13 @@ data.frame(year = 1973:2017, age = 1:5) %>%
 
   The basic ggplot figure spaces years about every 5-10, depending on the timeseries length.
 
-```{r}
+```{r, cahce = T}
 ggplot(df, aes(year, age, size = y)) + geom_point()  + scale_size_area()
 ```
 
   This makes for a rather poor axis, for our typical presentation needs.
   We can clean this up somewhat by using breaks or the pretty_breaks function from the scales package
-```{r}
+```{r, cahce = T}
 ggplot(df, aes(year, age, size = y)) + geom_point() + scale_size_area() +
     scale_x_continuous(breaks = seq(1973, 2016, 3))
 
@@ -47,7 +45,7 @@ ggplot(df, aes(year, age, size = y)) + geom_point() +
   tickr will add a tick mark to each year and provide a label for the interval designated.
 
 Labels every 10 years.
-```{r}
+```{r, cahce =T}
 xaxis = tickr(df, year, 10)
 yaxis = tickr(df, age, 2)
 
