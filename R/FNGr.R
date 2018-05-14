@@ -45,6 +45,7 @@ tickr <- function(
 
   data %>%
     distinct(!!VAR) %>%
+    ungroup(!!VAR) %>% 
     mutate(labels = ifelse(!!VAR %in% seq(to * round(min(!!VAR) / to), max(!!VAR), to),
                           !!VAR, "")) %>%
     select(breaks = UQ(VAR), labels)
